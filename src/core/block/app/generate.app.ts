@@ -4,10 +4,10 @@ import {
   TBlock,
   TGenerateNextBlock,
 } from "../../../models/block.exports"
-import { ParamError } from "../../../models/error.export"
+import { CatchError, TYPE } from "../../../models/error.export"
 
 export const generateNextBlock: TGenerateNextBlock = (data) => {
-  if (!data) new ParamError(data).mesage()
+  if (!data) new CatchError(TYPE.PARAM, data)
 
   const previousBlock = getLatestBlock()
   const previousHash = previousBlock.hash

@@ -1,9 +1,9 @@
 import { ICreateBlock, TBlock } from "../../block.exports"
-import { ParamError } from "../../error.export"
+import { CatchError, TYPE } from "../../error.export"
 
 export class Block implements ICreateBlock {
   create(block: TBlock): TBlock {
-    if (!block) new ParamError(block).mesage()
+    if (!block) new CatchError(TYPE.PARAM, block)
     return block
   }
 }
