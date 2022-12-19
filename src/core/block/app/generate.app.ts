@@ -1,10 +1,10 @@
-import { ParamError } from "../../../error/param.export"
+import { Hash } from "../../../models/hash.exports"
 import {
   Block,
   TBlock,
   TGenerateNextBlock,
 } from "../../../models/block.exports"
-import { Hash } from "../../../models/hash.exports"
+import { ParamError } from "../../../models/error.export"
 
 export const generateNextBlock: TGenerateNextBlock = (data) => {
   if (!data) new ParamError(data).mesage()

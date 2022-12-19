@@ -1,5 +1,5 @@
-import { ParamError } from "../../../error/param.export"
 import { ICreateBlock, TBlock } from "../../block.exports"
+import { ParamError } from "../../error.export"
 
 export class Block implements ICreateBlock {
   create(block: TBlock): TBlock {

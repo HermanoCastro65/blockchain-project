@@ -1,4 +1,4 @@
-import { ParamError } from "../../../error/param.export"
+import { ParamError } from "../../error.export"
 import { ICalculateHash } from "../interface.export"
 import { TCalculateHashParams } from "../types.exports"
 
