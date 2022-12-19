@@ -1,5 +1,5 @@
 import { TBlock } from "./block.type"
 
-export type TGenerateBlock = {
+export type TGenerateNextBlock = {
   (data: string): TBlock
 }

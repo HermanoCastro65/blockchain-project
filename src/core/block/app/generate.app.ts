@@ -1,7 +1,11 @@
-import { Block, TBlock, TGenerateBlock } from "../../models/block.exports"
-import { Hash } from "../../models/hash.exports"
+import {
+  Block,
+  TBlock,
+  TGenerateNextBlock,
+} from "../../../models/block.exports"
+import { Hash } from "../../../models/hash.exports"
 
-export const generateNextBlock: TGenerateBlock = (data) => {
+export const generateNextBlock: TGenerateNextBlock = (data) => {
   if (!data) throw new Error()
 
   const previousBlock = getLatestBlock()
