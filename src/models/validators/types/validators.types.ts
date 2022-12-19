@@ -1,12 +1,12 @@
 import { TBlock } from "../../block.exports"
 
-export type TValidatorReturn = boolean
+export type TValidatorsReturn = boolean
 
 export type TValidNewBlockParams = {
   newBlock: TBlock
   previousBlock: TBlock
 }
 
-export type TValidBlockStructure = TBlock
+export type TValidBlockStructureParams = TBlock
 
-export type TValidChain = TBlock[]
+export type TValidChainParams = TBlock[]
