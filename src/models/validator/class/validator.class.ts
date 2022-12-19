@@ -7,7 +7,7 @@ import {
 } from "../interfaces.exports"
 import { TValidatorsReturn, TValidNewBlockParams } from "../types.export"
 import { TValidChainParams } from "../types.export"
-import { verifyNewBlock } from "./functions.export"
+import { verifyBlockStructure, verifyNewBlock } from "./functions.export"
 
 export class Validator
   implements IValidNewBlock, IValidBlockStructure, IValidChain
@@ -20,7 +20,8 @@ export class Validator
   }
 
   isValidBlockStructure(params: TBlock): TValidatorsReturn {
-    throw new Error("Method not implemented.")
+    if (!params) return new CatchError(TYPE.PARAM, params).mesage()
+    return verifyBlockStructure(params)
   }
 
   isValidChain(params: TValidChainParams): TValidatorsReturn {
