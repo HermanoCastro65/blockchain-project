@@ -9,8 +9,7 @@ export class CatchError implements IError {
     this.type = type
     this.param = error
   }
-
-  mesage(): Error {
+  mesage(): boolean | Error {
     if (this.type === TYPE.PARAM)
       throw new Error(
         `${MESAGE.ERROR_WITH} ${TYPE.PARAM}: ${this.param.toString()}`

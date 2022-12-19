@@ -1,6 +1,7 @@
 import { TBlock } from "../../block.exports"
+import { CatchError } from "../../error.export"
 
-export type TValidatorsReturn = boolean
+export type TValidatorsReturn = boolean | Error
 
 export type TValidNewBlockParams = {
   newBlock: TBlock

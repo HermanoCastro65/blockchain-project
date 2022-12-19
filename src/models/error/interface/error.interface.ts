@@ -1,3 +1,3 @@
 export interface IError {
-  mesage(): Error
+  mesage(): boolean | Error
 }

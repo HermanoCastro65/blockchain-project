@@ -7,7 +7,7 @@ import {
 import { CatchError, TYPE } from "../../../models/error.export"
 
 export const generateNextBlock: TGenerateNextBlock = (data) => {
-  if (!data) new CatchError(TYPE.PARAM, data)
+  if (!data) new CatchError(TYPE.PARAM, data).mesage()
 
   const previousBlock = getLatestBlock()
   const previousHash = previousBlock.hash
