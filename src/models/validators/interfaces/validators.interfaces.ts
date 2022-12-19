@@ -6,7 +6,7 @@ import {
 } from "../types.export"
 
 export interface IValidNewBlock {
-  isValidNewBlockParams(params: TValidNewBlockParams): TValidatorsReturn
+  isValidNewBlock(params: TValidNewBlockParams): TValidatorsReturn
 }
 
 export interface IValidBlockStructure {
