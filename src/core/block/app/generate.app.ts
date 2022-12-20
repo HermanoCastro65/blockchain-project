@@ -5,6 +5,7 @@ import {
   TGenerateNextBlock,
 } from "../../../models/block.exports"
 import { CatchError, TYPE } from "../../../models/error.export"
+import { getLatestBlock } from "../functions.exports"
 
 export const generateNextBlock: TGenerateNextBlock = (data) => {
   if (!data) new CatchError(TYPE.PARAM, data).mesage()
@@ -22,8 +23,4 @@ export const generateNextBlock: TGenerateNextBlock = (data) => {
   })
 
   return new Block().create({ index, hash, previousHash, timestamp, data })
-}
-
-function getLatestBlock(): TBlock {
-  throw new Error("Function not implemented.")
 }

@@ -1,5 +1,6 @@
 import { TBlock } from "../../../block.exports"
 import { CatchError, TYPE } from "../../../error.export"
+import { calculateHashForBlock } from "../../../hash/class/functions.exports"
 
 export const verifyNewBlock = (newBlock: TBlock, previousBlock: TBlock) => {
   const { index, hash, previousHash, timestamp, data } = newBlock
@@ -13,8 +14,4 @@ export const verifyNewBlock = (newBlock: TBlock, previousBlock: TBlock) => {
   }
 
   return true
-}
-
-function calculateHashForBlock(newBlock: TBlock) {
-  return "Function not implemented"
 }
