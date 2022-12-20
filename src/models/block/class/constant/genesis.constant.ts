@@ -1,4 +1,4 @@
-import { Block, TCreateGenesisBlock } from "../../../models/block.exports"
+import { Block, TCreateGenesisBlock } from "../../../block.exports"
 
 const genesisBlcock = {
   index: 0,
