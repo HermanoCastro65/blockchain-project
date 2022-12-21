@@ -3,5 +3,5 @@ import { TBlock } from "./block.types"
 type TGenesisBlock = TBlock
 
 export type TCreateGenesisBlock = {
-  (): TGenesisBlock
+  (param: Partial<TBlock>): TGenesisBlock | Error
 }
