@@ -1,2 +1,1 @@
-export * from "./types/error.enums"
-export * from "./types/error.type"
+export * from "./types/error.types"
