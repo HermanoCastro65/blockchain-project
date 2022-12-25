@@ -3,7 +3,7 @@ import {
   ICalculateHash,
   TCalculateHashParams,
 } from "../../../models/hash.exports"
-import { CatchError } from "../../error/class.export"
+import { CatchError } from "@error/class.export"
 
 export class Hash implements ICalculateHash {
   calculate(params: TCalculateHashParams): string {

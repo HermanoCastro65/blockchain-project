@@ -1,4 +1,4 @@
-import { IError, TError, MESAGE, TYPE } from "../../../models/error.exports"
+import { IError, TError, MESAGE, TYPE } from "@models/error.exports"
 
 export class CatchError implements IError {
   public type: TError

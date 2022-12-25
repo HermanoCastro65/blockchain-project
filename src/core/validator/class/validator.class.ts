@@ -1,18 +1,19 @@
-import { TBlock } from "../../../models/block.exports"
-import { TYPE } from "../../../models/error.exports"
-import { CatchError } from "../../error/class.export"
+import { CatchError } from "@error/class.export"
+import { TBlock } from "@models/block.exports"
+import { TYPE } from "@models/error.exports"
 import {
+  IValidNewBlock,
   IValidBlockStructure,
   IValidChain,
-  IValidNewBlock,
-} from "../../../models/validator.exports"
-import {
-  TValidatorsReturn,
   TValidNewBlockParams,
-} from "../../../models/validator/types.exports"
-import { TValidChainParams } from "../../../models/validator/types.exports"
-import { verifyBlockStructure, verifyNewBlock } from "../functions.exports"
-import { verifyChain } from "../functions/verify-chain.function"
+  TValidatorsReturn,
+  TValidChainParams,
+} from "@models/validator.exports"
+import {
+  verifyNewBlock,
+  verifyBlockStructure,
+  verifyChain,
+} from "@validator/functions.exports"
 
 export class Validator
   implements IValidNewBlock, IValidBlockStructure, IValidChain

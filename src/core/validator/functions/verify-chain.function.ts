@@ -1,11 +1,8 @@
-import { TYPE } from "../../../models/error.exports"
-import { CatchError } from "../../error/class.export"
-import {
-  TVerifyBlockStructure,
-  TVerifyChaTn,
-} from "../../../models/validator.exports"
-import { Validator } from "../class/validator.class"
-import { genesisBlock } from "../../block/constants.exports"
+import { genesisBlock } from "@block/constants.exports"
+import { CatchError } from "@error/class.export"
+import { TYPE } from "@models/error.exports"
+import { TVerifyBlockStructure, TVerifyChaTn } from "@models/validator.exports"
+import { Validator } from "@validator/class.export"
 
 const isValidGenesis: TVerifyBlockStructure = (block) => {
   if (!block) return new CatchError(TYPE.PARAM, block).mesage()

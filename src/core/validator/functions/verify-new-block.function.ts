@@ -1,7 +1,7 @@
-import { TYPE } from "../../../models/error.exports"
-import { TVerifydNewBlock } from "../../../models/validator/types/functions.types"
-import { CatchError } from "../../error/class.export"
-import { calculateHashForBlock } from "../../hash/functions.exports"
+import { CatchError } from "@error/class.export"
+import { calculateHashForBlock } from "@hash/functions.exports"
+import { TYPE } from "@models/error.exports"
+import { TVerifydNewBlock } from "@models/validator.exports"
 
 export const verifyNewBlock: TVerifydNewBlock = (newBlock, previousBlock) => {
   const { index, hash, previousHash, timestamp, data } = newBlock

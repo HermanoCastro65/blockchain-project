@@ -1,4 +1,4 @@
-import { TBlock } from "./block.types"
+import { TBlock } from "@models/block.exports"
 
 type TGenesisBlock = TBlock
 

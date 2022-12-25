@@ -1,8 +1,8 @@
-import { TGenerateNextBlock } from "../../../models/block.exports"
-import { TYPE } from "../../../models/error.exports"
-import { CatchError } from "../../error/class.export"
-import { Hash } from "../../hash/class.export"
-import { Block } from "../class.export"
+import { Block } from "@block/class.export"
+import { CatchError } from "@error/class.export"
+import { TGenerateNextBlock } from "@models/block.exports"
+import { TYPE } from "@models/error.exports"
+import { Hash } from "@hash/class.export"
 import { getLatestBlock } from "./get-latest-block.function"
 
 export const generateNextBlock: TGenerateNextBlock = (data) => {

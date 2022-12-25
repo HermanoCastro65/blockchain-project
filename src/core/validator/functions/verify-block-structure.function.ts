@@ -1,6 +1,6 @@
-import { TYPE } from "../../../models/error.exports"
-import { TVerifyBlockStructure } from "../../../models/validator.exports"
-import { CatchError } from "../../error/class.export"
+import { CatchError } from "@error/class.export"
+import { TYPE } from "@models/error.exports"
+import { TVerifyBlockStructure } from "@models/validator.exports"
 
 export const verifyBlockStructure: TVerifyBlockStructure = (block) => {
   const { index, hash, previousHash, timestamp, data } = block

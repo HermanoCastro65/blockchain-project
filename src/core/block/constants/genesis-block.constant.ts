@@ -1,8 +1,8 @@
-import { TBlock, TCreateGenesisBlock } from "../../../models/block.exports"
-import { Block } from "../class.export"
+import { Block } from "@block/class.export"
+import { CatchError } from "@error/class.export"
+import { TCreateGenesisBlock, TBlock } from "@models/block.exports"
+import { TYPE } from "@models/error.exports"
 import dotenv from "dotenv"
-import { CatchError } from "../../error/class.export"
-import { TYPE } from "../../../models/error.exports"
 
 dotenv.config()
 const hash = process.env.GENESIS_HASH

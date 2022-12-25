@@ -1,4 +1,4 @@
-import { TBlock } from "../../block.exports"
+import { TBlock } from "@models/block.exports"
 
 export type TVerifydNewBlock = {
   (newBlock: TBlock, previousBlock: TBlock): boolean | Error

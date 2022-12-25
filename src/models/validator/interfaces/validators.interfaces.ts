@@ -3,7 +3,7 @@ import {
   TValidBlockStructureParams,
   TValidChainParams,
   TValidNewBlockParams,
-} from "../types.exports"
+} from "@models/validator.exports"
 
 export interface IValidNewBlock {
   isValidNewBlock(params: TValidNewBlockParams): TValidatorsReturn
