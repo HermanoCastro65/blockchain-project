@@ -1,5 +1,13 @@
 {
   "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "@models/*": ["models/*"],
+      "@block/*": ["core/block/*"],
+      "@error/*": ["core/error/*"],
+      "@hash/*": ["core/hash/*"],
+      "@validator/*": ["core/validator/*"]
+    },
     "target": "es6",
     "module": "commonjs",
     "rootDir": "src",
